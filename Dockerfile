@@ -8,7 +8,7 @@ COPY /theme/keywind /opt/keycloak/themes/keywind
 
 RUN /opt/keycloak/bin/kc.sh build
 
-FROM quay.io/keycloak/keycloak:latest
+FROM quay.io/keycloak/keycloak:26.1.4
 
 COPY java.config /etc/crypto-policies/back-ends/java.config
 
